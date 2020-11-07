@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="AllTests">
 <listeners>
-<listener class-name="Utilities.Listeners">
+<listener class-name="Utilities.ListenerTest">
 </listener>
 </listeners>
 	<test name="Java Automation">
