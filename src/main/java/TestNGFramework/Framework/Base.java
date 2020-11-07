@@ -10,7 +10,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status;
 
 import Utilities.ExcelReader;
 import Utilities.ExtentReport;

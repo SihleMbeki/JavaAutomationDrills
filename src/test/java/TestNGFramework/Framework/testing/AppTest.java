@@ -3,7 +3,6 @@ package TestNGFramework.Framework.testing;
 import java.util.Hashtable;
 
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
