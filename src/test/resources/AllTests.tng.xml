@@ -1,9 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-
 <suite name="AllTests">
-	<test name="All">
-		<packages>
-			<package name="TestNGFramework.Framework.testing"></package>
-		</packages>
+<listeners>
+<listener class-name="Utilities.Listeners">
+</listener>
+</listeners>
+	<test name="Java Automation">
+		<classes>
+		<class name="TestNGFramework.Framework.testing.AppTest">
+		</class>
+		</classes>
 	</test>
 </suite>

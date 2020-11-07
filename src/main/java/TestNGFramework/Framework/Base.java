@@ -28,7 +28,7 @@ public class Base {
 	@BeforeMethod
 	public void beforeMethod(Method method) {
 		test=ExtentReport.createTest(method.getName());
-		test.log(Status.PASS, "Passed");
+	
 	}
 
 	@AfterMethod

@@ -143,14 +143,14 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;AllTests&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;All&quot; verbose=&quot;0&quot;&gt;
-    &lt;packages&gt;
-      &lt;package name=&quot;TestNGFramework.Framework.testing&quot;/&gt;
-    &lt;/packages&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;Utilities.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Java Automation&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;TestNGFramework.Framework.testing.AppTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- All --&gt;
+  &lt;/test&gt; &lt;!-- Java Automation --&gt;
 &lt;/suite&gt; &lt;!-- AllTests --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -162,7 +162,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">All (1 class)</span>
+                <span class="test-name">Java Automation (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -192,12 +192,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test')
 data.setCell(0, 2, 'TestNGFramework.Framework.testing.AppTest')
-data.setCell(0, 3, 5);
+data.setCell(0, 3, 12);
 window.suiteTableData['AllTests']= { tableData: data, tableDiv: 'times-div-AllTests'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 ms</span>
+              <span class="suite-total-time">Total running time: 12 ms</span>
               <div id="times-div-AllTests">
               </div> <!-- times-div-AllTests -->
             </div> <!-- times-div -->
@@ -230,35 +230,35 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">1327 ms</span>
+                <span class="method-start">1468 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">1349 ms</span>
+                <span class="method-start">1485 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">1379 ms</span>
+                <span class="method-name">beforeMethod(public void TestNGFramework.Framework.testing.AppTest.test(java.util.Hashtable))</span>
+                <span class="method-start">1516 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test({Home=Liverpool})</span>
-                <span class="method-start">1379 ms</span>
+                <span class="method-start">1526 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">1385 ms</span>
+                <span class="method-start">1539 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">1386 ms</span>
+                <span class="method-start">1540 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">1388 ms</span>
+                <span class="method-start">1542 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">1433 ms</span>
+                <span class="method-start">1573 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
