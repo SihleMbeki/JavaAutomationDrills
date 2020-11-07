@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +102,7 @@
                     <div class="method-list-content passed suite-AllTests">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AllTests" title="TestNGFramework.Framework.testing.AppTest" class="method navigator-link" hash-for-method="test(2, b)">test(2, b)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AllTests" title="TestNGFramework.Framework.testing.AppTest" class="method navigator-link" hash-for-method="test(1, a)">test(1, a)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-AllTests" title="TestNGFramework.Framework.testing.AppTest" class="method navigator-link" hash-for-method="test({Home=Liverpool})">test({Home=Liverpool})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-AllTests -->
@@ -130,18 +125,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test(2, b)">
-                  </a> <!-- test(2, b) -->
+                  <a name="test({Home=Liverpool})">
+                  </a> <!-- test({Home=Liverpool}) -->
                   <span class="method-name">test</span>
-                  <span class="parameters">(2, b)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test(1, a)">
-                  </a> <!-- test(1, a) -->
-                  <span class="method-name">test</span>
-                  <span class="parameters">(1, a)</span>
+                  <span class="parameters">({Home=Liverpool})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -162,7 +149,6 @@
     &lt;/packages&gt;
     &lt;classes&gt;
       &lt;class name=&quot;TestNGFramework.Framework.testing.AppTest&quot;/&gt;
-      &lt;class name=&quot;TestNGFramework.Framework.testing.Base&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- All --&gt;
 &lt;/suite&gt; &lt;!-- AllTests --&gt;
@@ -176,7 +162,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">All (2 classes)</span>
+                <span class="test-name">All (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -202,20 +188,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test')
 data.setCell(0, 2, 'TestNGFramework.Framework.testing.AppTest')
-data.setCell(0, 3, 3);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'test')
-data.setCell(1, 2, 'TestNGFramework.Framework.testing.AppTest')
-data.setCell(1, 3, 0);
+data.setCell(0, 3, 5);
 window.suiteTableData['AllTests']= { tableData: data, tableDiv: 'times-div-AllTests'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 ms</span>
+              <span class="suite-total-time">Total running time: 5 ms</span>
               <div id="times-div-AllTests">
               </div> <!-- times-div-AllTests -->
             </div> <!-- times-div -->
@@ -230,22 +212,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-AllTests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">TestNGFramework.Framework.testing.Base</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">afterSuite</span>
-                <br/>
-                <span class="ignored-method-name">beforeSuite</span>
-                <br/>
-                <span class="ignored-method-name">afterTest</span>
-                <br/>
-                <span class="ignored-method-name">beforeTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-AllTests" class="panel">
@@ -261,47 +230,35 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">55 ms</span>
+                <span class="method-start">1327 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">78 ms</span>
+                <span class="method-start">1349 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">123 ms</span>
+                <span class="method-start">1379 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">test(1, a)</span>
-                <span class="method-start">123 ms</span>
+                <span class="method-name">test({Home=Liverpool})</span>
+                <span class="method-start">1379 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">129 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">130 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">test(2, b)</span>
-                <span class="method-start">130 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">131 ms</span>
+                <span class="method-start">1385 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">131 ms</span>
+                <span class="method-start">1386 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">134 ms</span>
+                <span class="method-start">1388 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">193 ms</span>
+                <span class="method-start">1433 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
