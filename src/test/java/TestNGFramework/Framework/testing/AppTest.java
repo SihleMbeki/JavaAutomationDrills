@@ -5,13 +5,17 @@ import java.util.Hashtable;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
+
 import TestNGFramework.Framework.Base;
+import Utilities.ExtentReport;
 
-public class AppTest extends Base{
+public class AppTest extends Base {
 
-	 @Test(dataProvider="dp")
-	public void test(Hashtable<String,String> testdata) {
-		  System.out.println(testdata.get("Home").toString());
+	@Test(dataProvider = "dp")
+	public void test(Hashtable<String, String> testdata) {
+		System.out.println(testdata.get("Home").toString());
+		test.log(Status.PASS, "Test Step");
 	}
 
 	@DataProvider
@@ -39,12 +43,12 @@ public class AppTest extends Base{
 //
 //		return data;
 		Object[][] data = new Object[1][1];
-		Hashtable<String,String> table= new Hashtable<String,String>();
+		Hashtable<String, String> table = new Hashtable<String, String>();
 		table.put("Home", "Liverpool");
-		data[0][0]=table;
+		data[0][0] = table;
 		return data;
-		
-		//return new Object[][] { new Object[] { 1, "a" }, new Object[] { 2, "b" }, };
+
+		// return new Object[][] { new Object[] { 1, "a" }, new Object[] { 2, "b" }, };
 	}
 
 }

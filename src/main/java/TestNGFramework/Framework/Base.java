@@ -3,10 +3,17 @@ package TestNGFramework.Framework;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+
+import java.lang.reflect.Method;
+
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+
 import Utilities.ExcelReader;
+import Utilities.ExtentReport;
 
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
@@ -15,11 +22,13 @@ import org.testng.annotations.AfterSuite;
 public class Base {
 	protected String excelFileName;
 	protected ExcelReader excel;
+	protected static ExtentTest test;
 	String directory;
 
 	@BeforeMethod
-	public void beforeMethod() {
-		System.out.println("Before Method ");
+	public void beforeMethod(Method method) {
+		test=ExtentReport.createTest(method.getName());
+		test.log(Status.PASS, "Passed");
 	}
 
 	@AfterMethod
@@ -52,11 +61,12 @@ public class Base {
 		directory=System.getProperty("user.dir");
 		excelFileName=directory+"\\src\\test\\resources\\testdata.xlsx";
 		excel=new ExcelReader(excelFileName);
+		ExtentReport.createReport(directory);
 	}
 
 	@AfterSuite
 	public void afterSuite() {
-		System.out.println("After Suite ");
+		ExtentReport.closeReport();
 	}
 
 }
